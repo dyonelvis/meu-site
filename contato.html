@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dyon Elvis</title>
+    <link rel="stylesheet" href="styles.css"> <!--Associa styles.css á página atual-->
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Sobre mim</a>
+                </li>
+                <li>
+                    <a href="formacao.html">Formação</a>
+                </li>
+                <li>
+                    <a href="portfolio.html">Portfólio</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <header>
+            <div class="right">
+                <img src="./img/2021.jpg"></img>
+            </div>
+            <h1>Dyon Elvis Dias Teixeira</h1>
+            <h2>Desenvolvedor de Software e Games</h2>
+        </header>
+        <main>
+            <section>
+                <h3>Contato</h3>
+                <form action="https://api.staticforms.xyz/submit" method="post"> <!--api usada para deixar o email totalmente responsivo, enviando mensagem para o meu email pessoal-->
+                    <label>Nome</label>
+                    <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required> <!--required usado para não permitir campo em branco-->
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" requered>
+                    <label>Mensagem</label>
+                    <textarea name="message" cols="30" rows="10" placeholder="Digite sua menssagem" required></textarea>
+                    <button type="submit">Enviar</button>
+
+                    <input type="hidden" name="accessKey" value="56410941-8fad-4b8b-8be0-d1f2a89d9e2c">
+                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html"> <!--exibe uma mensagem de agradecimento e retorna para a pagina inicial "Sobre mim"-->
+                </form>
+            </section>
+        </main>
+        <footer>
+            <a href="https://github.com/dyonelvis" target="_blank" rel="noopener noreferrer"> <!--link que leva direto para a minha conta no Github-->
+                <img src="./img/github.png"></img>
+                <p>Github</p>
+            </a>
+            <a href="" target="_blank" rel="noopener noreferrer">
+                <img src="./img/linkedin.png"></img>
+                <p>Linkedin</p>
+            </a>
+            <a href="https://www.instagram.com/dyonschilt/" target="_blank" rel="noopener noreferrer"> <!--link rede social-->
+                <img src="./img/instagram.png"></img>
+                <p>Instagram</p>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
